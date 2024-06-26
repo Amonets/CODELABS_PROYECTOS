@@ -1,17 +1,10 @@
-class Person {
-  late final String fullName;
-  late final int ageInMonths;
-
-  void init(String name, int age) {
-    this.fullName = "$name $name";
-    this.ageInMonths = age * 12;
-  }
-}
-
 void main() {
-  final person = Person();
-  person.init("John", 30);
-
-  print(person.fullName); // Output: John John
-  print(person.ageInMonths); // Output: 360
+  // Declaramos la variable 'a' como un entero (int)
+  int a;
+  
+  // Asignamos un valor entero válido a 'a', en este caso 145
+  a = 145;
+  
+  // Imprimimos el valor de 'a'
+  print('a is $a.');
 }
