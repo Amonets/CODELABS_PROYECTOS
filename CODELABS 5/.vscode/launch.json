@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "material-components-flutter-motion-codelab-complete",
+            "cwd": "material-components-flutter-motion-codelab-complete",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "material-components-flutter-motion-codelab-complete (profile mode)",
+            "cwd": "material-components-flutter-motion-codelab-complete",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "material-components-flutter-motion-codelab-complete (release mode)",
+            "cwd": "material-components-flutter-motion-codelab-complete",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
