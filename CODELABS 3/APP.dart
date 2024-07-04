@@ -18,12 +18,20 @@ class MyApp extends StatelessWidget {
   child: Padding(
     padding: EdgeInsets.all(16.0),
     child: Column(
-      children: [
+      children: [ 
+        ImageSection(image: 'images/lake.jpg'), // Agregado ImageSection aquí
         TitleSection(
           name: 'Campamento del lago Oeschinen',
           location: 'Kandersteg Suiza',
               ),
-              ButtonSections(),
+              ButtonSections(),//Agregando boton
+              TextSection( // Agregado TextSection aquí
+                  description: 'El lago Oeschinen se encuentra al pie del Blüemlisalp en los Alpes berneses. '
+                      'Situado a 1.578 metros sobre el nivel del mar, es uno de los lagos alpinos más grandes. '
+                      'Un paseo en góndola desde Kandersteg, seguido de una caminata de media hora por los pastos '
+                      'y un bosque de pinos, te lleva al lago, que se calienta a 20 grados centígrados en verano. '
+                      'Actividades que se disfrutan aquí incluyen remo y andar en la pista de trineo de verano.',
+              )
              ],
             ),
           ),
@@ -168,3 +176,19 @@ class ButtonWithText extends StatelessWidget {
       ],
     );
   }
+
+class ImageSection extends StatelessWidget {
+  const ImageSection({super.key, required this.image});
+
+  final String image;
+
+  @override
+  Widget build(BuildContext context) {
+    return Image.asset(
+      image,
+      width: 600,
+      height: 240,
+      fit: BoxFit.cover,
+    );
+  }
+}
